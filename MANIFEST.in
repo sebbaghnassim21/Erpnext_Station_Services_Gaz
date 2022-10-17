@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include station_services *.css
+recursive-include station_services *.csv
+recursive-include station_services *.html
+recursive-include station_services *.ico
+recursive-include station_services *.js
+recursive-include station_services *.json
+recursive-include station_services *.md
+recursive-include station_services *.png
+recursive-include station_services *.py
+recursive-include station_services *.svg
+recursive-include station_services *.txt
+recursive-exclude station_services *.pyc
