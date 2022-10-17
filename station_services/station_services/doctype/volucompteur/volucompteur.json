@@ -1,0 +1,85 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-10-17 09:56:05.821485",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "volucompteur",
+  "item_code",
+  "designation",
+  "distributeur",
+  "cuve",
+  "index_fin"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "naming_series",
+   "options": "Volu.####"
+  },
+  {
+   "fieldname": "volucompteur",
+   "fieldtype": "Data",
+   "label": "Volucompteur"
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "label": "Produit",
+   "options": "Item"
+  },
+  {
+   "fetch_from": "item_code.item_name",
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "D\u00e9signation"
+  },
+  {
+   "fieldname": "index_fin",
+   "fieldtype": "Float",
+   "label": "Index Fin"
+  },
+  {
+   "fieldname": "distributeur",
+   "fieldtype": "Link",
+   "label": "Distributeur",
+   "options": "Distributeur"
+  },
+  {
+   "fetch_from": "distributeur.cuve",
+   "fieldname": "cuve",
+   "fieldtype": "Link",
+   "label": "Cuve",
+   "options": "Warehouse"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-10-17 10:05:10.807633",
+ "modified_by": "Administrator",
+ "module": "station services",
+ "name": "Volucompteur",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
